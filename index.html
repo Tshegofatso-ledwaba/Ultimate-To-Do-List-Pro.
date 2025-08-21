@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ultimate To-Do List Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🌟 Ultimate To-Do List Pro 🌟</h1>
+
+    <div class="controls">
+        <input type="text" id="task-input" placeholder="Add a new task">
+        <input type="date" id="task-date">
+        <select id="task-priority">
+            <option value="Low">Low Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="High">High Priority</option>
+        </select>
+        <button id="add-btn">Add</button>
+    </div>
+
+    <div class="filters">
+        <button data-filter="all" class="filter-btn">All</button>
+        <button data-filter="completed" class="filter-btn">Completed</button>
+        <button data-filter="pending" class="filter-btn">Pending</button>
+        <button data-filter="High" class="filter-btn">High</button>
+        <button data-filter="Medium" class="filter-btn">Medium</button>
+        <button data-filter="Low" class="filter-btn">Low</button>
+    </div>
+
+    <input type="text" id="search-input" placeholder="Search tasks...">
+
+    <div class="progress-container">
+        <div id="progress-bar"></div>
+    </div>
+
+    <ul id="task-list"></ul>
+
+    <button id="clear-completed">Clear Completed</button>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <button id="export-btn">Export Tasks</button>
+    <input type="file" id="import-input" style="display:none;">
+    <button id="import-btn">Import Tasks</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

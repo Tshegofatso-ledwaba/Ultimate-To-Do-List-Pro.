@@ -1,0 +1,65 @@
+/* General Styles and Bright Colors */
+:root {
+    --bg-color: #ffffffcc;
+    --text-color: #333;
+    --primary: #ff4500;
+    --secondary: #32cd32;
+    --high-priority: #ff1744;
+    --medium-priority: #ffb74d;
+    --low-priority: #64b5f6;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    min-height: 100vh;
+    margin: 0;
+    transition: 0.5s;
+}
+body.dark { background: #121212; color: white; }
+.container {
+    background: var(--bg-color);
+    padding: 25px 35px;
+    border-radius: 20px;
+    width: 450px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+}
+h1 { text-align: center; color: var(--primary); margin-bottom: 20px; }
+.controls, .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 15px; }
+#task-input, #task-date, #task-priority, #search-input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--primary);
+    flex: 1;
+}
+#add-btn, #clear-completed, #dark-mode-toggle, .filter-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#add-btn { background-color: var(--primary); color: white; }
+#add-btn:hover { background-color: #ff6347; }
+#task-list { list-style: none; padding: 0; margin-bottom: 10px; }
+#task-list li { display: flex; justify-content: space-between; align-items: center;
+    padding: 12px; margin-bottom: 10px; border-radius: 12px; color: var(--text-color);
+    font-weight: bold; transition: transform 0.2s, box-shadow 0.2s, opacity 0.3s, background 0.3s;
+    cursor: grab; animation: fadeIn 0.3s ease-in; }
+#task-list li.completed { text-decoration: line-through; opacity: 0.6; }
+.task-buttons button { margin-left: 5px; padding: 5px 10px; border-radius: 8px; font-weight: bold; }
+.complete-btn { background-color: var(--secondary); color: white; }
+.delete-btn { background-color: #ff1744; color: white; }
+.edit-btn { background-color: #1e90ff; color: white; }
+li[data-priority="High"] { background-color: var(--high-priority); color: white; }
+li[data-priority="Medium"] { background-color: var(--medium-priority); color: white; }
+li[data-priority="Low"] { background-color: var(--low-priority); color: white; }
+/* Progress bar */
+.progress-container { width: 100%; background-color: #ddd; border-radius: 12px; margin: 10px 0; height: 20px; overflow: hidden; }
+#progress-bar { height: 100%; width: 0%; background-color: #32cd32; border-radius: 12px; transition: width 0.3s; }
+@keyframes fadeIn { from {opacity:0; transform:translateY(-20px);} to {opacity:1; transform:translateY(0);} }
