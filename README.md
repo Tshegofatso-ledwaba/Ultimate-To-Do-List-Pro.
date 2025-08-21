@@ -1,28 +1,46 @@
 # Ultimate To-Do List Pro
 
-A bright, interactive, fully-featured To-Do List app built with HTML, CSS, and JavaScript.
+A bright, interactive To-Do List web app built with **HTML, CSS, and JavaScript**.  
+This app allows users to efficiently manage tasks, demonstrating functionality and user-friendly design.
 
-## Features
+---
 
-- Add/Edit/Delete tasks
-- Mark tasks as completed
-- Priority-based color coding (High, Medium, Low)
-- Set due dates
-- Filter tasks: All / Completed / Pending / By Priority
-- Search tasks by text
-- Clear all completed tasks
-- Drag-and-drop reordering
-- Progress bar shows % of completed tasks
-- Dark Mode toggle
-- Export/Import tasks as JSON
-- LocalStorage persistence
-- Notifications for tasks due today
+## 🖼 App Screenshot
 
-## Usage
+---
 
-Open `index.html` in a browser and start managing tasks!
+![App Screenshot](PNG%20picturee.png)
 
-## Deployment
+---
 
-Deploy on GitHub Pages by pushing this repository to GitHub and enabling Pages in Settings.
+## ✅ Features
+
+- ✏️ Add, edit, and delete tasks  
+- ✔️ Mark tasks as complete  
+- 🎨 Bright, visually appealing UI  
+- 🌙 Dark Mode toggle  
+- 🔍 Search tasks  
+- 📊 Progress bar showing completed tasks  
+- 🧹 Clear all completed tasks  
+- ⚡ Drag-and-drop task reordering  
+- 📤 Export and import tasks  
+- 💾 Persistent storage using localStorage  
+
+---
+
+## 🚀 Live Demo
+
+Try the live app here: [Ultimate To-Do List Pro](https://tshegofatso-ledwaba.github.io/Ultimate-To-Do-List-Pro./)
+
+---
+
+## 🛠 Technologies Used
+
+- HTML5  
+- CSS3  
+- JavaScript  
+
+---
+
+Made by **Tshegofatso Ledwaba**
 
